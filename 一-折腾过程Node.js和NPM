@@ -1,0 +1,64 @@
+---
+title: 一-折腾过程Node.js和NPM
+tags: 折腾,继续,Node.js,NPM,Git
+slug: storywriter/upgrade_log
+grammar_mindmap: true
+renderNumberedHeading: true
+grammar_code: true
+grammar_decorate: true
+grammar_mathjax: true
+---
+
+
+萌新确实是个小白；因为Hexo这个第一次接触；很多不懂。就随便google查了相关安装教程。
+一：在Ubuntu上安装最新的Node.js和NPM
+
+[参考此文](http://www.jishutk.com/web/javascript/20191.html)
+步骤1：添加node.js ppa
+
+node.js包在LTS版本和当前版本中可用。可以根据需要选择要在系统上安装的版本。让我们将ppa添加到系统中，以便在Ubuntu上安装nodejs
+``` javascript
+$ sudo apt-get install curl python-software-properties
+$ curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+```
+使用当前版本：
+
+``` javascript
+$ sudo apt-get install curl python-software-properties
+$ curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+```
+步骤2：在Ubuntu上安装node.js
+
+可以成功地将node.js ppa添加到Ubuntu系统。现在使用apt get执行下面的命令install node on和ubuntu。这也将安装带有node.js的NPM。此命令还将在系统上安装许多其他依赖包。
+
+``` shell
+$ sudo apt-get install nodejs
+```
+
+步骤3：检查node.js和npm版本
+
+安装node.js之后，请验证并检查已安装的版本。可以在node.js官方网站上找到有关当前版本的更多详细信息。
+
+``` crmsh
+$ node -v 
+```
+v11.12.0
+另外，检查NPM版本
+
+``` shell
+$ npm -v 
+```
+6.7.0
+以上就基本安装完毕。
+
+二：安装[Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+Installing on Linux
+CentOS
+
+``` gams
+$ sudo dnf install git-all
+```
+
+Debian-based distribution, such as Ubuntu, try apt:
+
+`$ sudo apt install git-al`l
